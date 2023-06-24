@@ -1,3 +1,5 @@
+$codes = Get-Content -raw -encoding utf8 -path ./JMGC_YW_437_code.json | ConvertFrom-Json
+
 $index = 1000
 foreach ($prop in $codes.PSObject.Properties) {
     $code = $prop.Name
